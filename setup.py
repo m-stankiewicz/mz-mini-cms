@@ -1,0 +1,20 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="minicms",
+    version="0.1.0",
+    packages=find_packages(),
+    install_requires=[
+        "fastapi>=0.109.2",
+        "uvicorn>=0.27.1",
+        "sqlalchemy>=2.0.25",
+        "pydantic>=2.6.1",
+        "python-multipart>=0.0.6",
+        "python-jose[cryptography]>=3.3.0",
+        "passlib[bcrypt]>=1.7.4",
+        "alembic>=1.13.1",
+        "jinja2>=3.1.3",
+        "aiofiles>=23.2.1",
+        "python-slugify>=8.0.4"
+    ],
+)
